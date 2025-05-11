@@ -248,7 +248,7 @@ class StatsManager:
             w.writerow([dist, t, avg, nitro, police])
     def plot(self):
         try:
-            df = pd.read_csv("game_stats.csv")
+            df = pd.read_csv("game_data.csv")
             plt.figure(figsize=(10, 5))
             plt.plot(df["Distance"], label="Distance")
             plt.plot(df["Time"], label="Time")

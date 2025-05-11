@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("game_stats.csv", encoding="utf-8-sig", header=None)
+df = pd.read_csv("game_data.csv", encoding="utf-8-sig", header=None)
 df.columns = ["Distance (m)", "Time (sec)", "Avg Speed", "Nitros Used", "Police Spawned"]
 df["Session"] = [f"Session {i+1}" for i in range(len(df))]
 
